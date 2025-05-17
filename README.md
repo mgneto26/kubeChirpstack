@@ -19,7 +19,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="drops.png" alt="Logo" width="150" height="80">
+    <img src="imagens/drops.png" alt="Logo" width="150" height="80">
   </a>
 
   <h3 align="center">Arquitetura Modular para LoRaWAN</h3>
@@ -98,7 +98,7 @@ O servidor Chirpstack em funcionamento permite a criação de APIs externar, con
 <!-- ARQUITETURA -->
 ## Aquitetura Provisionada
 
-<img src="arquitetura.jpeg" alt="Logo" width="340" height="180">
+<img src="imagens/arquitetura.jpeg" alt="Logo" width="340" height="180">
 
 <!-- CONTRIBUTING -->
 ## Contribuições
