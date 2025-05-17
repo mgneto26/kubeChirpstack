@@ -109,8 +109,7 @@ Embora a rede proposta neste trabalho seja simples de replicar, ela adota padrõ
 <!-- LICENSE -->
 ## Licença
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
+ Creative Commons Attribution 4.0 International license
 
 
 <!-- CONTACT -->
