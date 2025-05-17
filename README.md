@@ -19,15 +19,15 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="logoiot.webp" alt="Logo" width="80" height="80">
+    <img src="drops.png" alt="Logo" width="150" height="80">
   </a>
 
-  <h3 align="center">Arquitetura Modular para IoT</h3>
+  <h3 align="center">Arquitetura Modular para LoRaWAN</h3>
 
   <p align="center">
-    Servidor Chirpstack instalado de forma robusta 
+    Mário Neto e Inatel
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://blogiot.com.br"><strong>Explore a documentação »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
@@ -47,12 +47,12 @@
   * [Ferramentas](#ferramentas)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
+  * [Instalação](#instalação)
+* [Uso](#uso)
+* [Aquitetura Provisionada](#aquitetura-provisionada)
+* [Contribuições](#contribuições)
+* [Licença](#licença)
+* [Contato](#contato)
 * [Acknowledgements](#acknowledgements)
 
 
@@ -72,104 +72,53 @@ Este projeto utilizou ferramentas conhecidas na área de devOps.
 * [Chirpstack Simulator](https://laravel.com)
 
 
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Pré-requisitos
 
-Primeiramente é preciso criar templates de VMs, no Proxmox, contendo uma versão do Ubuntu. Escolhemos fazer a instalação de uma imagem em cloud do Ubuntu oficial mínima [1] [2]
+É preciso ter um ambiente de Máquinas Virtuais (VMs). Em nosso caso utilizamos o Proxmox.
+
+### Instalação
+
+Foi criado um arquivo makefile para instalaão dos microserviços de forma ordenada.
 ```sh
-sudo apt update && sudo apt dist-upgrade
+make all
 ```
-Verifica se o IP é estático no control plane (opcional)
-```sh
-# faz um backup do arquivo antes
-sudo cp nomeArquivo.yaml nomeArquivo.yaml.bak  
-sudo nano 50-cloud-init.yaml
-
-# exeomplos abaixo
-... # modelo com dhcp
-eth0:
-    dhcp: true
-    match:
-            macaddresses: 4e:26:ee:c2:28:fc
-    set-name: eth0
-
-... # modelo com IP estático
-eth0:
-    addresses: [10.10.10.213/24]
-    nameservers:
-            addresses: [10.10.10.1]    # IP do Gateway | IP do servodr DNS primário
-    routes:
-            - to: default
-                via: 10.10.10.1
-```
-
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https://github.com/your_username_/Project-Name.git
-```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
-
-
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Uso
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Com essa infraestrutura provisionada, é possível a criação de uma rede de IoT com LoRaWAN.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+O servidor Chirpstack em funcionamento permite a criação de APIs externar, conectadas à aplicações dedicadas - trabalho realizado no blogIoT
 
 
+<!-- ARQUITETURA -->
+## Aquitetura Provisionada
+
+<img src="arquitetura.jpeg" alt="Logo" width="340" height="180">
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Contribuições
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
+Embora a rede proposta neste trabalho seja simples de replicar, ela adota padrões atualizados e uma arquitetura modular que permite fácil adaptação para ambientes reais. O Estado da Arte indica que, embora existam redes mais complexas, há demanda por soluções didáticas, econômicas e de fácil manutenção. lacuna que este projeto busca preencher.
 
 
 <!-- LICENSE -->
-## License
+## Licença
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
 <!-- CONTACT -->
-## Contact
+## Contato
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Mário Neto - [@may_blog](https://blogiot.com.br) - blogIoT
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Link do Projeto: [https://github.com/mgneto26/kubeChirpstack](https://github.com/mgneto26/kubeChirpstack)
 
 
 
@@ -196,13 +145,13 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/mgneto26/kubeChirpstack/forks
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://github.com/mgneto26/kubeChirpstack?tab=License-1-ov-file#readme
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
