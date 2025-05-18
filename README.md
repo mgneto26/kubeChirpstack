@@ -47,9 +47,6 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## Resumo
-Esse trabalho aborda a montagem de um broker MQTT que escala automaticamente, conforme o uso de CPU.
-
 
 ### Ferramentas
 Este projeto utilizou ferramentas conhecidas na área de devOps.
@@ -61,7 +58,7 @@ Este projeto utilizou ferramentas conhecidas na área de devOps.
 
 <!-- GETTING STARTED -->
 ## Guia Inicial
-
+Esse trabalho aborda a montagem de um broker MQTT que escala automaticamente, conforme o uso de CPU.
 
 ### Pré-requisitos
 
@@ -79,7 +76,7 @@ make all
 
 Com essa infraestrutura provisionada, é possível o gerenciamento de uma rede de IoT com LoRaWAN.
 
-O servidor Chirpstack permite a criação de APIs externar, conectadas à aplicações dedicadas - trabalho realizado no blogIoT / dropsIoT
+O servidor Chirpstack permite a criação de APIs externar, conectadas à aplicações dedicadas.
 
 
 <!-- ARQUITETURA -->
