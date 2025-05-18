@@ -35,7 +35,7 @@ make all
 <!-- USAGE EXAMPLES -->
 ## Uso
 
-Com essa infraestrutura provisionada, é possível o gerenciamento de uma rede de IoT, com LoRaWAN, utilizada em Cidade Inteligente. O servidor Chirpstack permite a criação de APIs externar conectadas em aplicações dedicadas, tipo exemplo do blogIoT
+Com essa infraestrutura provisionada, é possível o gerenciamento de uma rede de IoT, com LoRaWAN, utilizada em cidades e fazendas inteligentes. O servidor Chirpstack permite a criação de APIs externar conectadas em aplicações dedicadas.
 
 
 <!-- ARQUITETURA -->
