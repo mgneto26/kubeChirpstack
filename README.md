@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="http://dropsiot.com.br/">
-    <img src="drops.png" alt="Logo" width="150" height="80">
+    <img src="drops.png" style="background-color: #1e1e1e; padding: 14px; border-radius: 26px;  alt="Logo" width="150" height="80">
   </a>
 
   <h3 align="center">Arquitetura Modular para LoRaWAN</h3>
@@ -27,9 +27,14 @@ Esse trabalho aborda a montagem de um broker MQTT que escala automaticamente, co
 
 ### Instalação
 
-Foi criado um arquivo makefile para instalação dos microserviços de forma ordenada.
+Gera os manifestos
 ```sh
-make all
+make render
+```
+
+Aplica tudo no cluster
+```sh
+make deploy
 ```
 
 <!-- USAGE EXAMPLES -->
