@@ -96,15 +96,9 @@ Embora a rede proposta neste trabalho seja simples de replicar, ela adota padrõ
  Creative Commons Attribution 4.0 International license
 
 
-<!-- CONTACT -->
-## Contato
-
-Mário Neto - [@my_blog](https://blogiot.com.br) - blogIoT
-
-
 <!-- ACKNOWLEDGEMENTS -->
 ## Agradecimentos
-Agradelo ao orientador Prof. Samuel e ao CTIC Inatel.
+Agradeço ao orientador Prof. Samuel e ao CTIC Inatel.
 
 
 
