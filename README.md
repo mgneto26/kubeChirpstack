@@ -65,7 +65,7 @@ Este projeto utilizou ferramentas conhecidas na área de devOps.
 
 ### Pré-requisitos
 
-É preciso ter um ambiente de Máquinas Virtuais (VMs). Em nosso caso utilizamos o Proxmox.
+É preciso ter um ambiente de Máquinas Virtuais (VMs) e um cluster Kubernetes
 
 ### Instalação
 
