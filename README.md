@@ -17,7 +17,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ### Ferramentas
-Este projeto utilizou ferramentas conhecidas na área de devOps.
+Esse trabalho aborda a montagem de um broker MQTT que escala automaticamente, conforme o uso de CPU. Utilizou-se ferramentas conhecidas na área de devOps.
 * [Proxmox](https://www.proxmox.com)
 * [Kubernetes](https://kubernetes.io)
 * [Chirpstack](https://www.chirpstack.io)
@@ -25,9 +25,6 @@ Este projeto utilizou ferramentas conhecidas na área de devOps.
 
 
 <!-- GETTING STARTED -->
-## Guia Inicial
-Esse trabalho aborda a montagem de um broker MQTT que escala automaticamente, conforme o uso de CPU.
-
 ### Pré-requisitos
 
 É preciso ter um ambiente de Máquinas Virtuais (VMs) e um cluster Kubernetes
@@ -42,9 +39,7 @@ make all
 <!-- USAGE EXAMPLES -->
 ## Uso
 
-Com essa infraestrutura provisionada, é possível o gerenciamento de uma rede de IoT, com LoRaWAN, utilizada em Cidade Inteligente. 
-
-O servidor Chirpstack permite a criação de APIs externar conectadas em aplicações dedicadas.
+Com essa infraestrutura provisionada, é possível o gerenciamento de uma rede de IoT, com LoRaWAN, utilizada em Cidade Inteligente. O servidor Chirpstack permite a criação de APIs externar conectadas em aplicações dedicadas.
 
 
 <!-- ARQUITETURA -->
@@ -62,8 +57,3 @@ Embora a rede proposta neste trabalho seja simples de replicar, ela adota padrõ
 ## Licença
 
  Creative Commons Attribution 4.0 International license
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Agradecimentos
-Agradeço ao orientador Prof. Samuel e ao CTIC Inatel.
