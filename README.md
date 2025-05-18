@@ -30,7 +30,7 @@
 
 
 <!-- TABLE OF CONTENTS -->
-## Conteúdo
+<!-- ## Conteúdo
 
 * [Resumo](#resumo)
   * [Ferramentas](#ferramentas)
@@ -42,7 +42,7 @@
 * [Contribuições](#contribuições)
 * [Licença](#licença)
 * [Contato](#contato)
-* [Acknowledgements](#acknowledgements)
+* [Acknowledgements](#acknowledgements) -->
 
 
 
