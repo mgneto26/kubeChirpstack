@@ -1,24 +1,21 @@
-KUSTOMIZE = kubectl apply -k
-NAMESPACE = chirpstack
+SHELL := /bin/bash
 
-.PHONY: all mosquitto postgres redis chirpstack wait
+ifndef VERBOSE
+.SILENT:
+endif
 
-all: mosquitto postgres redis wait chirpstack
+MANIFESTS_FILE := rendered.yaml
 
-mosquitto:
-	$(KUSTOMIZE) base/mosquitto
+.PHON: render deploy undeploy clean
 
-postgres:
-	$(KUSTOMIZE) base/postgres
+render:
+	kustomize build base > ${MANIFESTS_FILE}
 
-redis:
-	$(KUSTOMIZE) base/redis
+deploy: 
+	if [[ -f "${MANIFESTS_FILE}" ]]; then kubectl create -f ${MANIFESTS_FILE}; else echo "First render the manifests by \"make render.\"";fi
 
-wait:
-	@echo "Esperando serviços subirem..."
-	@kubectl wait --namespace=$(NAMESPACE) --for=condition=available deployment/mosquitto --timeout=60s
-	@kubectl wait --namespace=$(NAMESPACE) --for=condition=available deployment/postgres --timeout=60s
-	@kubectl wait --namespace=$(NAMESPACE) --for=condition=available deployment/redis --timeout=60s
+undeploy:
+	if [[ -f "${MANIFESTS_FILE}" ]]; then kubectl delete -f ${MANIFESTS_FILE}; else echo "Where is your ${MANIFESTS_FILE} file?";fi
 
-chirpstack:
-	$(KUSTOMIZE) base/chirpstack
+clean:
+	if [[ -f "${MANIFESTS_FILE}" ]]; then rm ${MANIFESTS_FILE}; fi

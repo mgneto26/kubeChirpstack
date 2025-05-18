@@ -4,7 +4,7 @@ metadata:
   name: main
 
 resources:
-- chirpstack/
 - mosquitto/
-- postgresql/ 
 - redis/
+- postgresql/ 
+- chirpstack/
