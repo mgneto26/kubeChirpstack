@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="http://dropsiot.com.br/">
-    <img src="drops.png" style="background-color: #1e1e1e; padding: 14px; border-radius: 26px;  alt="Logo" width="150" height="80">
+    <img src="logoblog.png" width="100">
   </a>
 
   <h3 align="center">Arquitetura Modular para LoRaWAN</h3>
